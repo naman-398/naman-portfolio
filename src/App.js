@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/common/NavBar';
+import ProgressBar from './components/common/ProgressBar';
+// import FeaturedProject from './components/home/FeaturedProject';
+import Header from './components/home/Header';
+import Projects from './components/home/Projects';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='bg-vampire-black'>
+      <ProgressBar/>
+      <NavBar/>
+      <Header/>
+      {/* <FeaturedProject/> */}
+      <Projects/>
     </div>
   );
 }
